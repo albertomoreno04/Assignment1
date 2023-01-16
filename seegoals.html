@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>See Goals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .Header {
+            padding: 15px;
+            background-color: grey;
+            color: white;
+        }
+
+        .Bar {
+        overflow: hidden;
+        background-color: darkgrey;
+        }
+
+        .Bar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+        }
+
+        .Bar a.left4 {
+        float: right;
+        }
+
+        .Bar a.left5 {
+        float: right;
+        }
+
+        .Content {
+            padding: 15px;
+        }
+
+        footer {
+        position: absolute;
+        bottom: 0;
+        min-width: 100%;
+        overflow: hidden;
+        background-color: darkgrey;
+        }
+
+        footer a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+        } 
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <h1>Goals</h1>
+    </div>
+    
+    <div class="Bar">
+        <a href="homepage.html" class="left1">Home</a>
+        <a href="setgoal.html" class="left2">Set goal</a>
+        <a href="seegoals.html" class="left3">See goals</a>
+        <a href="tasks.html" class="tasks">Tasks</a>
+        <a href="signin.html" class="left4">Login</a>
+        <a href="signup.html" class="left5">Sign up</a>
+    </div>
+
+    <div class="Content">
+        <h2>See goals</h2>
+        <ol>
+            <li>
+                <b>Drink more water</b> <br>
+                Description: Drink six glasses of water throughout the day <br>
+                Area of improvement: Health <br>
+                Who will do it? Me <br>
+                Objective: Drink two liters of water a day throughout a month <br>
+                Duration: 1 Month <br>
+                Progress: <progress id="progress" value="33" max="100">Progress: </progress>
+            </li>
+            <br>
+            <li>
+                <b>Run</b> <br>
+                Description: Prepare for a race running ten kilometers regurarly <br>
+                Area of improvement: Sports <br>
+                Who will do it? Me <br>
+                Objective: Run ten kilometers twice a week for six months <br>
+                Duration: 6 Months <br>
+                Progress: <progress id="progress" value="55" max="100">Progress: </progress>
+            </li>
+        </ol>  
+
+    </div>
+
+    <footer>
+        <a href="" class="aboutus">About us</a>
+        <a href="" class="help">Help</a>
+        <a href="" class="terms">Terms</a>
+        <a href="" class="FAQ">FAQ</a>
+    </footer>
+</body>
+</html>

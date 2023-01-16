@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Set Goal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .Header {
+            padding: 15px;
+            background-color: grey;
+            color: white;
+        }
+
+        .Bar {
+            overflow: hidden;
+            background-color: darkgrey;
+        }
+
+        .Bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+
+        .Bar a.left4 {
+            float: right;
+        }
+
+        .Bar a.left5 {
+            float: right;
+        }
+
+        .Content {
+            padding: 15px;
+        }
+
+        .button {
+            background-color: rgba(248, 7, 7, 0.333);
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            min-width: 100%;
+            overflow: hidden;
+            background-color: darkgrey;
+        }
+
+        footer a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        } 
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <h1>Goals</h1>
+    </div>
+    
+    <div class="Bar">
+        <a href="homepage.html" class="left1">Home</a>
+        <a href="setgoal.html" class="left2">Set goal</a>
+        <a href="seegoals.html" class="left3">See goals</a>
+        <a href="tasks.html" class="tasks">Tasks</a>
+        <a href="signin.html" class="left4">Login</a>
+        <a href="signup.html" class="left5">Sign up</a>
+    </div>
+
+    
+    <div class="Content">
+        <h2>Set a Goal</h2>
+        <input type="text" name="goal" id="goalname" placeholder="Goal"><br>
+        <br>
+        <textarea rows = "5" cols = "60" name = "description" placeholder="Description"></textarea><br>
+        <br>
+        <input type="text" name="area" id="area" placeholder="Area of improvement"><br>
+        <br>
+        <input type="text" name="who" id="who" placeholder="Who will do it?"><br>
+        <br>
+        <input type="text" name="achieve" id="achieve" placeholder="Realistic objective"><br>
+        <br>
+        <input type="number" name="duration" id="duration" placeholder="Duration">
+        <input list="periods" placeholder="Period"><br>
+        <br>
+        <a href="seegoals.html"><button class="button">Create Goal</button></a>
+
+        <datalist id="periods">
+        <option value="Minutes">
+        <option value="Hours">
+        <option value="Days">
+        <option value="Week">
+        <option value="Month">
+        <option value="Year">
+        </datalist>    
+    </div>
+
+    <footer>
+        <a href="" class="aboutus">About us</a>
+        <a href="" class="help">Help</a>
+        <a href="" class="terms">Terms</a>
+        <a href="" class="FAQ">FAQ</a>
+    </footer>
+</body>
+</html>
